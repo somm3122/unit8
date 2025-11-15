@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>스팸 분류기</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>📨 스팸 메시지 분류기</h1>
+        <textarea id="message" placeholder="메시지를 입력하세요"></textarea><br>
+        <button id="predict-btn">예측하기</button>
+        <div id="error-area"></div>
+        <div id="result"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
